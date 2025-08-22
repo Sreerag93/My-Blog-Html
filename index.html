@@ -24,7 +24,8 @@
         <section id="about">
             <h2>My Story</h2>
             <p>
-                This section is about my details- introduction. 
+                This section is about my details- introduction.
+                 <br>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odit velit. Quaerat minus ex eius fugiat vitae temporibus blanditiis cum quas a earum dolores inventore laudantium sequi, veniam odit impedit.
 
             </p>
@@ -35,6 +36,7 @@
             <h2>My Blog post</h2>
             <p>
                 This contains the full content from new article. 
+                <br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fuga inventore beatae necessitatibus! Temporibus porro rem itaque quia fuga, maxime, error aperiam explicabo necessitatibus iusto omnis, pariatur sunt eius inventore.
 
             </p>
@@ -45,19 +47,60 @@
                 <!-- Text input for name -->
              <label for="name">Your name</label>
              <br>
-             <input type="text" name="name" id="name">
+             <input type="text" name="name" id="name" required minlength="3" maxlength="50">
              <br><br>
-             <!-- Text input for contact number -->
-              <label for="Contact number">Contact number</label>
+             <!--Text input for Email  -->
+             <label for="Email">Email</label>
+             <br><br>
+             <input type="Email" name="Email" id="Email" required>
+             <br><br>
+            <!-- Phone number Format 123-456-7876 -->
+             <!-- Regular expresions -->
+            
+        
+              <label for="Contact number">Contact number (e.g, 123-456-7876)</label>
               <br>
-              <input type="text" name="Contact number" id="Contact number">
+              <input type="tel" name="Contact number" id="Contact number" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7876">
+              <br><br>
+              <label for="Website">Your website ( optional)</label>
               <br>
+              <input type="url" name="url" id="url" placeholder="www.abcd.com">
+              <br><br>
               <!-- Text input for feed back -->
                <label for="Feedbacks">Your thoughts</label>
+            
+              <br><br>
+               <textarea name="feedback" id="" cols="25" rows="5"></textarea>
                <br><br>
-               <textarea name="" id="" cols="25" rows="5"></textarea>
-               <br><br>
+
+               <!-- Rate the experience -->
+                <p>How would you rate us?</p>
+                <label for="Good">Good</label>
+                <input type="radio" name="Rating" id="Good" required>
+                <br>
+                <label for="neutral">Neutral</label>
+                <input type="radio" name="Rating" id="Neutral" required>
+                <br>
+                <label for="Bad">Bad</label>
+                <input type="radio" name="Rating" id="Bad" required>
+                <br><br>
+                <!-- News letter sign up -->
+                 <input type="checkbox" name="News letter" id="News letter" value="Yes">
+                 <label for="News latter">Sign up for our News letter</label>
+                 <br><br>
+                 <!-- News letter topic -->
+                  <label for="Topic">Choose a topic</label>
+                  <br>
+                  <select name="Topic" id="topic">
+                    <option value="">Please choose an option</option>
+                    <option value="General">General</option>
+                    <option value="Suggestions">Suggestions</option>
+                    <option value="Questions">Questions</option>
+                    <option value="About us">About us</option>
+                  </select>
+                  <br><br>
                <button type="submit">Submit feedback</button>
+               <button type="reset">Reset</button>
                
 
             </form>
